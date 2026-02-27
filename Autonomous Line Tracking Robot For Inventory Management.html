@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Line Following Robot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5e6d3;
+    color: #3e2f1c;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Page fade animation */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Light transparent robotic structures */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/cubes.png");
+    opacity: 0.05;
+    z-index: -1;
+}
+
+header {
+    padding: 20px 10%;
+    background: #e8d5c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #5c4033;
+}
+
+.home-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #5c4033;
+    color: white;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: #5c4033;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Autonomous Line Tracking Robot For Inventory Management</h1>
+<a href="projects.html" class="home-btn">Back</a>
+</header>
+
+<div class="container">
+
+<h2>Project Introduction</h2>
+<p>
+Autonomous Line Tracing Robot for Inventory Management is an intelligent mobile robotic system designed to automate material handling within warehouse and storage environments. The robot navigates along predefined paths marked on the floor using infrared (IR) line detection sensors. These sensors continuously detect contrast between the guiding line and the surface, allowing accurate path tracking. 
+The system is controlled by a microcontroller such as Arduino, which processes real-time sensor inputs and generates appropriate motor control signals. Based on sensor feedback, the controller adjusts the speed and direction of DC motors through a motor driver module to maintain stable alignment with the path. 
+This robot can be integrated with inventory tracking mechanisms to transport goods between storage racks and dispatch areas. It reduces manual labor, minimizes human error, and improves operational efficiency in warehouses. The system ensures consistent movement, precise navigation, and reliable performance in structured industrial environments. 
+Overall, this project demonstrates the practical application of embedded systems, sensor integration, automation concepts, and intelligent control mechanisms in real-world inventory management solutions.
+</p>
+
+<h2>Working Process</h2>
+<p>
+The working principle of the Autonomous Line Tracing Robot for Inventory Management is based on real-time line detection and feedback control mechanisms. The robot uses infrared (IR) sensors placed underneath its chassis to detect the contrast between the guiding line and the floor surface. When the IR sensors detect a white surface, they reflect more infrared light, and when they detect a black line, less light is reflected. 
+These sensor readings are continuously sent to the microcontroller for processing. The microcontroller compares the sensor inputs and determines the robot’s position relative to the line. If the robot deviates from the path, corrective signals are generated instantly. 
+Motor driver modules receive control signals from the microcontroller to adjust the speed and direction of the DC motors. For example, if the robot shifts slightly left, the controller slows down the left motor and speeds up the right motor to bring it back to the center of the line. 
+This feedback loop runs continuously, ensuring smooth and accurate navigation. In inventory management applications, the robot follows predefined warehouse routes to transport items efficiently. The coordinated interaction between sensors, controller, and motors ensures autonomous movement with minimal human intervention.
+</p>
+
+<h2>Project Images</h2>
+
+<!-- Replace with your own images -->
+<img src="robot image 1.jpeg" alt="robot image 1">
+<img src="robot image 2.jpeg" alt="robot image 2">
+
+</div>
+
+</body>
+</html>

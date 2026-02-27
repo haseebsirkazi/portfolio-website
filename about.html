@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Haseeb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            transition: 0.4s;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        header {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0f172a;
+            color: white;
+            animation: slideDown 1s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .container {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: slideUp 1s ease;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 20px auto;
+            animation: slideUp 1.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .btn {
+            padding: 8px 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .toggle-btn {
+            background-color: #38bdf8;
+            color: black;
+            animation: popIn 1.5s ease;
+        }
+
+        .toggle-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .home-btn {
+            background-color: white;
+            color: #0f172a;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-left: 10px;
+            transition: 0.3s;
+            animation: popIn 1.6s ease;
+        }
+
+        .home-btn:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #0f172a;
+            color: white;
+        }
+
+        .dark-mode header {
+            background-color: #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>About Me</h1>
+    <div>
+        <button class="btn toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+        <a href="index.html" class="home-btn">Home</a>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Mohammad Haseeb Sirkazi</h2>
+
+    <p>
+        I am a passionate and driven Robotics and Automation engineering student currently pursuing my 
+        B.Tech at VTU, Belagavi. I have hands-on experience in designing and developing robotic systems, 
+        including autonomous line-following robots and Cartesian coordinate robots for pick-and-place operations.
+    </p>
+
+    <p>
+        My expertise includes CAD modeling using Fusion 360, Arduino-based embedded systems, 
+        sensor integration, and basic Python programming. I am deeply interested in automation systems, 
+        industrial robotics, and real-world problem-solving through intelligent machines.
+    </p>
+
+    <p>
+        My goal is to become a skilled Robotics Engineer capable of designing innovative and efficient 
+        robotic solutions that improve industrial productivity and automation processes.
+    </p>
+</div>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Haseeb</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #87ceeb; /* Sky blue */
+        color: #0f172a;
+    }
+
+    header {
+        padding: 20px 10%;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+        color: #0f172a;
+    }
+
+    .home-btn {
+        text-decoration: none;
+        padding: 8px 15px;
+        background: #0f172a;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 60px 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .box {
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+    }
+
+    .box h3 {
+        margin-bottom: 10px;
+    }
+
+    /* Brand Colors */
+    .phone { background: #4b5563; }         /* Neutral grey */
+    .email { background: #ea4335; }         /* Gmail red */
+    .linkedin { background: #0077b5; }      /* LinkedIn blue */
+    .github { background: #181717; }        /* GitHub black */
+
+    .box a {
+        color: white;
+        text-decoration: none;
+        word-break: break-word;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+    <a href="index.html" class="home-btn">Home</a>
+</header>
+
+<h2>Get In Touch</h2>
+
+<div class="container">
+
+    <div class="box phone">
+        <h3>📞 Number</h3>
+        <p>8431209785</p>
+    </div>
+
+    <div class="box email">
+        <h3>✉ Email</h3>
+        <p><a href="mailto:sirkazihaseeb@gmail.com">sirkazihaseeb@gmail.com</a></p>
+    </div>
+
+    <div class="box linkedin">
+        <h3>LinkedIn</h3>
+        <p>
+            <a href="https://www.linkedin.com/in/haseeb-sirkazi/" target="_blank">
+                View My LinkedIn Profile
+            </a>
+        </p>        
+    </div>
+
+    <div class="box github">
+        <h3>GitHub</h3>
+        <p>
+            <a href="https://github.com/haseebsirkazi" target="_blank">
+                View My Github Profile
+            </a>
+        </p>    
+    </div>
+
+</div>
+
+</body>
+</html>

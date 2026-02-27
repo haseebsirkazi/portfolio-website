@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills | Haseeb</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f172a;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /* Subtle grid background */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#1e293b 1px, transparent 1px),
+                    linear-gradient(90deg, #1e293b 1px, transparent 1px);
+        background-size: 40px 40px;
+        z-index: -1;
+    }
+
+    header {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e293b;
+    }
+
+    header h1 {
+        color: #38bdf8;
+    }
+
+    .home-btn {
+        text-decoration: none;
+        padding: 8px 15px;
+        background: #38bdf8;
+        color: #0f172a;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 36px;
+        color: #38bdf8;
+    }
+
+    .container {
+        padding: 80px 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .skill-box {
+        padding: 25px;
+        border-radius: 12px;
+        transition: 0.3s ease;
+    }
+
+    .skill-box:hover {
+        transform: translateY(-8px);
+    }
+
+    /* Simple different colors */
+    .box1 { background: #334155; }
+    .box2 { background: #1e293b; }
+    .box3 { background: #2d3748; }
+    .box4 { background: #3f4c6b; }
+    .box5 { background: #374151; }
+
+    .skill-box h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #38bdf8;
+    }
+
+    .skill-box p {
+        font-size: 15px;
+        color: #cbd5e1;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Technical Skills</h1>
+    <a href="index.html" class="home-btn">Home</a>
+</header>
+
+<h2>My Expertise</h2>
+
+<div class="container">
+
+    <div class="skill-box box1">
+        <h3>Fusion 360</h3>
+        <p>Experienced in 3D modeling and mechanical design for robotics and automation systems.</p>
+    </div>
+
+    <div class="skill-box box2">
+        <h3>Arduino & Embedded Systems</h3>
+        <p>Hands-on experience in microcontroller programming and hardware integration.</p>
+    </div>
+
+    <div class="skill-box box3">
+        <h3>Robotics Design</h3>
+        <p>Strong understanding of automation concepts and robotic motion mechanisms.</p>
+    </div>
+
+    <div class="skill-box box4">
+        <h3>Python Programming</h3>
+        <p>Basic Python knowledge for logic building and robotics-related applications.</p>
+    </div>
+
+    <div class="skill-box box5">
+        <h3>Sensors & Actuators</h3>
+        <p>Experience integrating sensors and motors for real-time robotic control systems.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cartesian Coordinate Robot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5e6d3;
+    color: #3e2f1c;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/cubes.png");
+    opacity: 0.05;
+    z-index: -1;
+}
+
+header {
+    padding: 20px 10%;
+    background: #e8d5c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #5c4033;
+}
+
+.home-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #5c4033;
+    color: white;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: #5c4033;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Cartesian Coordinate Robot</h1>
+<a href="projects.html" class="home-btn">Back</a>
+</header>
+
+<div class="container">
+
+<h2>Project Introduction</h2>
+<p>
+A Cartesian Coordinate Robot is an industrial robotic system that operates using three linear axes: X, Y, and Z. These axes are arranged perpendicular to each other, allowing the robot to move in a rectangular coordinate system. The robot performs precise linear motion along each axis using mechanisms such as lead screws, belt drives, or linear actuators. 
+The movement of each axis is controlled independently through stepper motors or servo motors, which are managed by a microcontroller or control unit. By coordinating the motion of all three axes, the robot can accurately position its end effector at any point within its working envelope. 
+Cartesian robots are widely used in pick-and-place operations, 3D printing, CNC machining, and automated assembly lines due to their high precision and structural stability. The simple mechanical design makes them easy to program and maintain compared to articulated robots. 
+This project demonstrates the design, modeling, and implementation of a Cartesian robot for automated material handling applications. It highlights concepts such as motion control, axis synchronization, and mechanical design using CAD tools like Fusion 360.
+</p>
+
+<h2>Working Process</h2>
+<p>
+The working principle of a Cartesian Coordinate Robot is based on controlled linear motion along three perpendicular axes: X, Y, and Z. Each axis is driven by a stepper motor or servo motor connected to mechanical components such as lead screws, linear rails, or belt mechanisms. The microcontroller acts as the central control unit and sends precise pulse signals to the motor drivers. 
+When a movement command is given, the controller calculates the required displacement along each axis and activates the corresponding motors. Stepper motors rotate in small increments, converting rotational motion into accurate linear movement. By controlling the number of pulses sent to each motor, the system determines the exact position of the end effector. 
+The coordination of all three axes allows the robot to move in a three-dimensional rectangular workspace. Limit switches or sensors are often used to define the home position and ensure safe operation. The robot follows programmed instructions to perform tasks such as pick-and-place operations with high precision and repeatability. 
+Continuous synchronization between motors ensures smooth motion and accurate positioning, making the Cartesian robot suitable for industrial automation and material handling applications.
+</p>
+
+</div>
+
+</body>
+</html>
